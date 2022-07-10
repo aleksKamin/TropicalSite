@@ -74,7 +74,6 @@
   .section-heading {
     font-size: 3.6rem;
   }
-
   .section-padding {
     padding: 8em 2em;
   }
@@ -83,7 +82,6 @@
   .section-heading {
     font-size: 4.8rem;
   }
-
   .section-padding {
     padding: 10em 2em;
   }
@@ -498,6 +496,47 @@ body {
   background-color: #164dcc;
 }
 
+.reviews__box {
+  position: relative;
+  margin: 2em;
+  padding: 2em;
+  border-radius: 8px;
+  -webkit-box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+          box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.18);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.reviews__box:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.reviews__box-img {
+  position: absolute;
+  top: 8%;
+  left: 75%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.reviews__box-img img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.reviews__box-quote {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  color: #1755e7;
+}
+.reviews__box-text {
+  margin-bottom: 1em;
+  font-size: 1.4rem;
+  color: #2e2e2e;
+}
+
 @media (min-width: 576px) {
   .dreams__box {
     -webkit-box-orient: horizontal;
@@ -525,7 +564,6 @@ body {
   .dreams__img {
     min-height: 300px;
   }
-
   .offers__option {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -562,12 +600,16 @@ body {
     padding: 1em;
   }
 }
+@media (max-width: 767px) {
+  .reviews.section-padding {
+    padding: 6em 0;
+  }
+}
 @media (min-width: 768px) {
   .white-block {
     height: 50px;
     width: 45%;
   }
-
   .header__heading {
     font-size: 6.6rem;
   }
@@ -577,11 +619,9 @@ body {
   .header__btn {
     font-size: 1.6rem;
   }
-
   .dreams__text {
     font-size: 1.8rem;
   }
-
   .hero-img {
     padding: 30rem 2em;
   }
@@ -592,7 +632,6 @@ body {
   .hero-img__text {
     font-size: 2.2rem;
   }
-
   .islands__cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -613,18 +652,15 @@ body {
     top: 50px;
     right: 50px;
   }
-
   .header {
     background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/palm_big.jpg");
   }
   .header__heading {
     font-size: 10rem;
   }
-
   .nav__item {
     font-size: 4.8rem;
   }
-
   .dreams__box {
     margin: 5em 0;
   }
@@ -647,7 +683,6 @@ body {
   .dreams__text {
     font-size: 2.2rem;
   }
-
   .hero-img {
     padding: 40rem 2em;
     background-image: .hero-img blue-gradient, url("/img/tahiti_big.jpg");
@@ -659,7 +694,6 @@ body {
     width: 60%;
     max-width: 900px;
   }
-
   .offers {
     background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("/img/hamak_big.jpg");
   }
